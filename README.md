@@ -1,24 +1,7 @@
-# psychology-test
+# Vue CLIで作る心理テストくん
 
-## Project setup
-```
-yarn install
-```
+🔮4つの選択肢によって貴方の性格や本音がわかるよ  
+🔮心理テストを追加する場合は`seed.json`に書いてね
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### テスト引用
+https://crea.bunshun.jp/list/psychology?link-answer-bottom=26228
