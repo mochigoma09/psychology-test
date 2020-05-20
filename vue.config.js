@@ -1,4 +1,4 @@
 module.exports = {
-    publicPath: '/my-project/',
+    publicPath: '/psychology-test/',
     outputDir: 'docs'
 }
