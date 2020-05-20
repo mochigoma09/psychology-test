@@ -3,7 +3,9 @@
     <h3>「{{anser.choice}}」を選んだあなたは</h3>
     <h1>{{anser.value.title}}</h1>
     <p v-html="nl2br(anser.value.text)"></p>
-    <router-link :to="{ name: 'que', params: { id:que_id }}">選択肢に戻る</router-link>
+    <div class="back">
+      <router-link :to="{ name: 'que', params: { id:que_id }}">選択肢に戻る</router-link>
+    </div>
   </div>
 </template>
 
@@ -29,11 +31,22 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-a {
-  color: #42b983;
+<style lang="scss" scoped>
+@import "../assets/common.scss";
+
+.anser {
+  p {
+    @include mq() {
+      text-align: center;
+    }
+
+    @include mq(sm) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  ul {
+    text-align: center;
+  }
 }
 </style>

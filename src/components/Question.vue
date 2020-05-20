@@ -34,19 +34,22 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+<style lang="scss" scoped>
+@import "../assets/common.scss";
+
+.question {
+  p {
+    @include mq() {
+      text-align: center;
+    }
+
+    @include mq(sm) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  ul {
+    text-align: center;
+  }
 }
 </style>
