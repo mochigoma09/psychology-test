@@ -1,4 +1,4 @@
-# my-project
+# psychology-test
 
 ## Project setup
 ```
